@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Wallet</title>
+</head>
+<body>
+    <h1>Cryptocurrency Wallet</h1>
+    <h2>Balance: <span id="balance">0</span> coins</h2>
+    <div>
+        <h3>Send Coins:</h3>
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+        <button onclick="sendTransaction()">Send</button>
+    </div>
+    <div>
+        <h3>Transaction History:</h3>
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
